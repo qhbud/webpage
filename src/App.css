@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #333;
+  position: relative; /* Add this */
+  min-height: 100vh; /* Add this */
+  overflow: hidden; /* Add this line */
+}
+
+.app {
+  max-width: 800px;
+  position: absolute;
+  top: 50%; /* Position the container halfway down */
+  left: 50%; /* Position the container halfway across */
+  transform: translate(-50%, -50%) scale(1.6); /* Center the container based on its own size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the container takes full viewport height */
+
+}
+
+
+.transform-btn {
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  left: 50%;
+  top: 50%;
+  border-bottom: 1px solid #ddd;
+}
+
+.box {
+  margin-top: -30px;
+  width: 300px;
+  height: 100px;
+  background-color: #F9F9FF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9ff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #181818;
+}
+
+.header p {
+  margin: 5px 0;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
